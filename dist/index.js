@@ -122,8 +122,7 @@ export class TrilletAgent extends EventEmitter {
             // Initialize call with LiveKit token
             await this.sdk.initializeCall({
                 token: data.token,
-                wsUrl: process.env.LIVEKIT_WS_URL ||
-                    "wss://trillet-ai-xdx0dw5r.livekit.cloud",
+                wsUrl: "wss://trillet-ai-xdx0dw5r.livekit.cloud",
                 audioSettings: {
                     sampleRate: 48000,
                 },
@@ -182,7 +181,7 @@ export class TrilletAgent extends EventEmitter {
         // Initialize call with LiveKit token
         await this.sdk.initializeCall({
             token: data.token,
-            wsUrl: process.env.LIVEKIT_WS_URL || "wss://trillet-ai-xdx0dw5r.livekit.cloud",
+            wsUrl: "wss://trillet-ai-xdx0dw5r.livekit.cloud",
             audioSettings: {
                 sampleRate: 48000,
             },
