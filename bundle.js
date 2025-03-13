@@ -21849,7 +21849,7 @@ var TrilletAgent = class extends import_index.default {
       }
       await this.sdk.initializeCall({
         token: data.token,
-        wsUrl: process.env.LIVEKIT_WS_URL || "wss://trillet-ai-xdx0dw5r.livekit.cloud",
+        wsUrl: "wss://trillet-ai-xdx0dw5r.livekit.cloud",
         audioSettings: {
           sampleRate: 48e3
         },
@@ -21902,7 +21902,7 @@ var TrilletAgent = class extends import_index.default {
     }
     await this.sdk.initializeCall({
       token: data.token,
-      wsUrl: process.env.LIVEKIT_WS_URL || "wss://trillet-ai-xdx0dw5r.livekit.cloud",
+      wsUrl: "wss://trillet-ai-xdx0dw5r.livekit.cloud",
       audioSettings: {
         sampleRate: 48e3
       },
