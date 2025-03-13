@@ -11,6 +11,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && tsc",
+    "prod-build": "esbuild dist/index.js --bundle --platform=browser --outfile=bundle.js --format=esm",
     "dev": "tsc --watch",
     "lint": "eslint src/**/*.{ts,tsx}",
     "prepare": "npm run build",
@@ -44,6 +45,7 @@
     "@typescript-eslint/eslint-plugin": "^6.18.1",
     "@typescript-eslint/parser": "^6.18.1",
     "babel-loader": "^10.0.0",
+    "esbuild": "^0.25.1",
     "eslint": "^8.56.0",
     "eventemitter3": "^5.0.1",
     "jest": "^29.7.0",
